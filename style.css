@@ -1,0 +1,642 @@
+@font-face{
+    font-family: segoeUI;
+    src:url(./assets/fonts/segoeui.ttf);
+}
+@font-face {
+    font-family: segoeUIBold;
+    src:url(./assets/fonts/segoeuib.ttf);
+}
+@font-face {
+    font-family: segoeuil;
+    src: url(./assets/fonts/segoeuil.ttf);
+}
+
+/* Utilizei o Fontawsome apenas para utilizar o CDN para colocar os icones onde precisava na página */
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 5em;
+    font-family:segoeUIBold;
+}
+.nav {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2571B7;
+}
+.closeMenu {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.openMenu {
+    position: absolute;
+    flex-wrap: wrap;
+    flex-direction: column;
+    top: 100px;
+    margin-left: 5vw;
+    text-align: center;
+    align-items: center;
+}
+.openMenu li {
+    font-size: 0.8em;
+}
+.nav .logo {
+    height: 100%;
+    margin: 10px 0;
+}
+.nav .fa-bars {
+    font-size: 20pt;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+.nav a {
+    text-decoration: none;
+    margin: 20px;
+    color: white;
+    font-size: 15pt;
+    font-family: segoeUI;
+    padding: 10px;
+}
+.nav a:hover {
+    background: rgba(0, 0, 0, 0.05); 
+}
+.nav button {
+    min-width: max-content;
+    padding: 0 2vw;
+    height: 8vh;
+    border: none;
+    color: white;
+    background-color: #302C27;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.main {
+    background: url("./assets/image/background_1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    min-height: 500px;
+    width: auto;
+}
+.main .main_content {
+    background: rgb(41,39,34);
+    background: linear-gradient(360deg, rgba(0,0,0,1) 1%, rgba(0, 0, 0, 0.3) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.main_content h1 {
+    font-size: 5em;
+    color:white;
+    font-family:segoeUIBold;
+    margin: 0 15%;
+}
+.main_content p {
+    font-size: 2.5em;
+    color:white;
+    font-family:segoeUI;
+    margin: 0 15%;
+}
+.main_content button {
+    max-width: 300px;
+    height: 65px;
+    margin: 10vh 0 0 15%;
+    border: none;
+    background-color: #00A4EF;
+    color: white;
+    font-size: 1.2em;
+    font-family:segoeUIBold;
+    cursor: pointer;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 5em;
+    color: white;
+    margin: 0 15%;
+}
+.icon i {
+    cursor: pointer;
+}
+.sub {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    margin: 5vw auto;
+}
+.sub_content span {
+    color:#F25022;
+    font-family:segoeUIBold;
+    font-size: 1.2em;
+}
+.sub_content p {
+    font-size: 1.180em;
+    font-family:segoeUI;
+    color: #7E7E7E;
+}
+.sub_texts {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+.sub_content_text {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sub_content_text h1 {
+    margin: 80px auto;
+    font-size: 3em;
+    color: #2571B7;;
+}
+.sub_content_text p {
+    font-size: 1.180em;
+    font-family:segoeUI;
+    color: #7E7E7E;
+}
+.sub_content_icons {
+    margin-top:3em;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    font-family:segoeUI;
+}
+.cards_left {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 0 3em 1em 3em;
+}
+.cards_right {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 0 3em;
+}
+.card_text {
+    padding: 30px;
+}
+.card_text p {
+    color: white;
+}
+.card_1 {
+    display: flex;
+    justify-content: center;
+    background-color: #0072C6;
+}
+.card_1 .card_img {
+    margin: auto 30px;
+}
+.card_2 {
+    display: flex;
+    justify-content: center;
+    background-color: #2C5898;
+}
+.card_2 .card_img {
+    margin: auto 30px;
+}
+.card_3 {
+    display: flex;
+    justify-content: center;
+    background-color: #207245;
+}
+.card_3 .card_img {
+    margin: auto 30px;
+}
+.card_4 {
+    display: flex;
+    justify-content: center;
+    background-color: #CB4A32;
+}
+.card_4 .card_img {
+    margin: auto 30px;
+}
+.card_5 {
+    display: flex;
+    justify-content: center;
+    background-color: #733781;
+}
+.card_5 .card_img {
+    margin: auto 30px;
+}
+.card_6 {
+    display: flex;
+    justify-content: center;
+    background-color: #00AFF0;
+}
+.card_6 .card_img {
+    margin: auto 30px;
+}
+.card_7 {
+    display: flex;
+    justify-content: center;
+    background-color: #094AB2;
+}
+.card_7 .card_img {
+    margin: auto 30px;
+}
+.card_8 {
+    display: flex;
+    justify-content: center;
+    background-color: #0073C6;
+}
+.card_8 .card_img {
+    margin: auto 30px;
+}
+.card_9 {
+    display: flex;
+    justify-content: center;
+    background-color: #0093BE;
+}
+.card_9 .card_img {
+    margin: auto 30px;
+}
+.card_10 {
+    display: flex;
+    justify-content: center;
+    background-color: #5558AF;
+}
+.card_10 .card_img {
+    margin: auto 30px;
+}
+.benefits {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.benefits_title {
+    font-size: 0.5em;
+    color: #2571B7;
+}
+.benefits_content {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.handshake {
+    width: max-content;
+    padding: 40px;
+    border-radius: 120px;
+    font-size: 5em;
+    margin: 50px auto;
+    color: white;
+    background-color: #7FBA00;
+}
+.shield {
+    width: max-content;
+    padding: 40px;
+    border-radius: 100%;
+    font-size: 5em;
+    margin: 50px auto;
+    color: white;
+    background-color: #00A4EF;
+}
+.laptop {
+    width: max-content;
+    padding: 40px;
+    border-radius: 100%;
+    font-size: 5em;
+    margin: 50px auto;
+    color: white;
+    background-color: #FFB900;
+}
+.benefits_icon_1 .bar,.benefits_icon_2 .bar,.benefits_icon_3 .bar {
+    display: flex;
+    width: 100px;
+    height: 5px;
+    margin: 20px auto;
+    background-color: #302c276b;
+    border-radius: 10px;
+}
+.benefits_p {
+    max-width: 500px;
+    margin: 0 3em;
+    font-family: segoeUI;
+}
+.benefits_p button {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: transparent;
+    font-family: segoeUI;
+}
+.btn_green {
+    color: #7FBA00;
+    border: 2px solid #7FBA00;
+    cursor: pointer;
+}
+.btn_blue {
+    color: #00A4EF;
+    border: 2px solid #00A4EF;
+}
+.btn_yellow {
+    color: #FFB900;
+    border: 2px solid #FFB900;
+    cursor: pointer;
+}
+.green{
+    font-size: 1.5em;
+    font-family: segoeUI;
+    color:#7FBA00;
+    cursor: pointer;
+}
+.blue{
+    font-size: 1.5em;
+    font-family: segoeUI;
+    color: #00A4EF;
+}
+.yellow{
+    font-size: 1.5em;
+    font-family: segoeUI;
+    color: #FFB900;
+}
+.comments {
+    width: 100%;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+}
+.back_comments {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.clients {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-family: segoeUI;
+}
+.clients .sub_clients {
+    display: flex;
+    flex-direction: column;
+}
+.clients .sub_clients .title_clients {
+    font-size: 35pt;
+    color: #0072c6;
+    margin: 50px auto;
+}
+.clients .sub_clients .clients_texts {
+    list-style: none;
+    display: grid;
+    width: auto;
+    margin: 30px 30px;
+    font-size: 16pt;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.clients .sub_clients .clients_texts .client1 {
+    display: grid;
+    align-items: center;
+    color: #969696;
+    border: 2px solid #656565;
+    padding: 30px;
+}
+.clients .sub_clients .clients_texts .client1 h1 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: tomato;
+}
+.clients .sub_clients .clients_texts .client2 {
+    display: grid;
+    align-items: center;
+    color: #969696;
+    border: 2px solid #656565;
+    padding: 30px;
+}
+.clients .sub_clients .clients_texts .client2 h1 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: tomato;
+}
+.clients .sub_clients .clients_texts .client3 {
+    display: grid;
+    align-items: center;
+    color: #969696;
+    border: 2px solid #656565;
+    padding: 30px;
+}
+.clients .sub_clients .clients_texts .client3 h1 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: tomato;
+}
+.clients .sub_clients .clients_texts .client4 {
+    display: grid;
+    align-items: center;
+    color: #969696;
+    border: 2px solid #656565;
+    padding: 30px;
+}
+.clients .sub_clients .clients_texts .client4 h1 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: tomato;
+}
+
+.client1:hover,
+.client2:hover,
+.client3:hover,
+.client4:hover {
+    background-color: #303030;
+    cursor: pointer;
+}
+.background_2 {
+    width: 100%;
+    height: 20em;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.7)), url("./assets/image/background_2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    display: flex;
+    margin-bottom: 2em;
+    justify-content: center;
+}
+.background_2 p {
+    font-size: 3em;
+    max-width: 80%;
+    text-align: center;
+    align-self: center;
+    font-family: segoeUI;
+    color: white;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    background-color: #FFFFFF;
+}
+form input[type=text] {
+    max-width: 200px;
+    padding: 10px;
+}
+form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #e6e6e6;
+    margin: 0 auto 50px auto;
+    padding: 50px;
+}
+form p {
+    display: flex;
+    margin-right: 0;
+    max-width: 300px;
+    min-width: 300px;
+    height: 5px;
+    font-size: 10pt;
+    color: #00aff0;
+    margin-top: 10px;
+    font-family: segoeUIBold;
+}
+form input[type="text"] {
+    max-width: 600px;
+    min-width: 300px;
+    width: 256px;
+    height: 40px;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    outline: 0;
+}
+form input[type="text"]:focus {
+    box-shadow: 0px 0px 3px #00aff0;
+}
+form button {
+    display: block;
+    width: 300px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: #00a4ef;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #0087c5;
+    -webkit-animation: blur 3s infinite;
+    animation: blur 3s infinite;
+}
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0087c5;
+}
+.logos {
+    margin: 15px auto;
+}
+.footer_text {
+    margin: 0 auto 10px auto;
+    color: white;
+    font-family: segoeUI;
+}
+@media (max-width: 1200px) {
+    .main_content h1 {
+        font-size: 2.8em;
+    }
+    .main_content p {
+        font-size: 1.5em;
+    }
+    .main {
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+    .main_content button{
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        min-width: max-content;
+        padding: 0 50px;
+    }
+    .icon {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .icon img {
+        display: none;
+    }
+    .icon i {
+        font-size: 0.8em;
+        cursor: pointer;
+        position: absolute;
+    }
+    .sub_content_icons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 1000px) {
+    .nav a  {
+    display: none;
+    }
+    .nav button {
+        min-width: max-content;
+        padding: 0 30px;
+    }
+    .nav .logo  {
+    display: none;
+    }
+    .nav .fa-bars {
+        font-size: 20pt;
+        color: white;
+        display: flex;
+    }
+    .background_2 p {
+        font-size: 2em;
+    }
+    .openMenu a {
+        display: flex;
+     }
+}
+@media (max-width: 700px) {
+    .benefits_content {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .benefits_p {
+        max-width: 300px;
+    }
+    .benefits_icon_1 .bar,.benefits_icon_2 .bar,.benefits_icon_3 .bar {
+        min-width: 20em;
+        max-width: 30em;
+    }   
+}
+@media (max-width: 1000px) {
+    .openMenu {
+        display: none;
+        padding: 0;
+        transition: 1s;
+    }
+}
